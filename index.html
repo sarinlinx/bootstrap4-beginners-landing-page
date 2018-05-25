@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css" />
+</head>
+
+<body>
+    <!-- Create navbar at top of page -->
+    <!--navbar-expand-lg means it will expand on large screens -->
+    <!-- fixed-top causes it to stick to the top when you scroll down-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- &#9776 is the value for the HTML symbol for a 3 line hamburger icon -->
+      <span class="navbar-toggler-icon">&#9776;</span>
+		</button>
+        <a class="navbar-brand" href="#"><img src="img/logo-small.png" class="img-fluid"/></a>
+
+        <!-- This div and all its content will be a collapsible element -->
+        <div class="collapse navbar-collapse" id="navigation-bar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#social">CONNECT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#who">WHO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">WORK</a></li>
+                <li class="nav-item"><a class="nav-link" href="#why">WHY</a></li>
+                <li class="nav-item"><a class="nav-link" href="#customers">CUSTOMERS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">PRICING</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Close navbar -->
+
+
+
+
+
+    <!-- Create HEADER section. This is the first large section a visitor sees -->
+    <section id="header">
+        <!-- Add a Bootstrap container -->
+        <div class="container">
+            <div class="row">
+                <!-- Anything over a medium sized device will see two columns of size 6 -->
+                <!-- Anything under a medium sized device will stack the sections -->
+                <div class="col-md-6">
+                    <img src="img/logo.png" class="img-fluid">
+                    <h2>Things Work Better with Space</h2>
+                    <!-- .lead class gives the text more weight -->
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam molestie est eget bibendum. Suspendisse pharetra ipsum a velit venenatis faucibus quis sed tellus.</p>
+                    <!-- Hide paragraph on small devices -->
+                    <p class="d-none d-md-block">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed id ante lacus. Nullam non consectetur eros, et consequat turpis.</p>
+                </div>
+                <!-- Close first column -->
+
+                <!-- d-none removes this from all screens -->
+                <!-- d-md-block shows it on medium and above screens -->
+                <div class="col-md-6 header-right d-none d-md-block">
+                    <p>Sed id ante lacus. Nullam non consectetur eros, et consequat turpis.</p>
+                    <!-- Add a form -->
+                    <form>
+                        <fieldset class="form-group">
+                            <label class="sr-only">name</label>
+                            <input type="text" class="form-control" placeholder="your name">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label class="sr-only">name</label>
+                            <input type="email" class="form-control" placeholder="your email">
+                        </fieldset>
+                        <button type="submit" class="btn btn-outline-info btn-block">sign up</button>
+                    </form>
+                </div>
+                <!-- Close second column -->
+            </div>
+            <!-- Close row -->
+
+
+
+
+
+            <div class="row">
+                <!-- Take up full width on all screen sizes -->
+                <div class="col-md-12 text-center">
+                    <!-- text-center centers the icon -->
+                    <a href="#socail"><i class="fas fa-chevron-down fa-3x"></i></a>
+                    <!-- Add font awesome down arrow with a link to the section below-->
+                </div>
+                <!-- Close col -->
+            </div>
+            <!-- Close row -->
+        </div>
+        <!-- Close container -->
+    </section>
+    <!-- Close HEADER section -->
+
+
+
+    <!-- SOCIAL -->
+    <section id="social">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h2>Connect with us:</h2>
+                    <!-- hr is central by default.  Since title is left, align hr to the left.-->
+                    <!-- Add width, otherwise it would span the entire col -->
+                    <hr align="left" width="50%">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Add list with class of 'inline' so this spans horizontally -->
+                    <ul class="list-inline">
+                        <!-- Add font awesome icons -->
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fab fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fas fa-rss"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Close row -->
+        </div>
+        <!-- Close SOCIAL container -->
+    </section>
+    <!-- END SOCIAL -->
+
+
+
+
+
+    <!-- WHO SECTION -->
+    <section id="who">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Who we are</h2>
+                    <hr align="left" width="50%">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam molestie est eget bibendum. Suspendisse pharetra ipsum a velit venenatis faucibus quis sed tellus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam molestie est eget bibendum. Suspendisse pharetra ipsum a velit venenatis faucibus quis sed tellus.</p>
+                    <button type="button" class="btn btn-who">Find out more</button>
+                </div>
+
+                <div class="col-md-6">
+                    <img class="img-fluid" src="img/what-image.png" />
+
+                </div>
+                <!-- Close col -->
+            </div>
+            <!-- Close row -->
+        </div>
+        <!-- Close container -->
+    </section>
+    <!-- Close WHO Section -->
+
+
+
+
+
+    <!-- WORK -->
+    <section id="work">
+        <div class="container">
+            <div class="row">
+                <!-- Add single column -->
+                <div class="col-md-12">
+                    <h2>Our latest work...</h2>
+                    <hr align="left" width="30%">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close Work Section -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE
