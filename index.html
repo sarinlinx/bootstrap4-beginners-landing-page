@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css" />
+    <!-- Download animate.css and move animate.min.css into your css folder -->
+    <!-- https://github.com/daneden/animate.css/ -->
+    <link rel="stylesheet" href="css/animate.min.css" />
 </head>
 
 <body>
@@ -52,7 +55,7 @@
             <div class="row">
                 <!-- Anything over a medium sized device will see two columns of size 6 -->
                 <!-- Anything under a medium sized device will stack the sections -->
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
                     <img src="img/logo.png" class="img-fluid">
                     <h2>Things Work Better with Space</h2>
                     <!-- .lead class gives the text more weight -->
@@ -64,7 +67,7 @@
 
                 <!-- d-none removes this from all screens -->
                 <!-- d-md-block shows it on medium and above screens -->
-                <div class="col-md-6 header-right d-none d-md-block">
+                <div class="col-md-6 header-right d-none d-md-block wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2s">
                     <p>Sed id ante lacus. Nullam non consectetur eros, et consequat turpis.</p>
                     <!-- Add a form -->
                     <form>
@@ -83,11 +86,7 @@
             </div>
             <!-- Close row -->
 
-
-
-
-
-            <div class="row">
+            <div class="row wow swing" data-wow-delay="2s">
                 <!-- Take up full width on all screen sizes -->
                 <div class="col-md-12 text-center">
                     <!-- text-center centers the icon -->
@@ -106,7 +105,7 @@
 
     <!-- SOCIAL -->
     <section id="social">
-        <div class="container">
+        <div class="container wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
             <div class="row">
 
                 <div class="col-md-6">
@@ -144,7 +143,7 @@
     <section id="who">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1s">
                     <h2>Who we are</h2>
                     <hr align="left" width="50%">
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam molestie est eget bibendum. Suspendisse pharetra ipsum a velit venenatis faucibus quis sed tellus.</p>
@@ -152,7 +151,7 @@
                     <button type="button" class="btn btn-who">Find out more</button>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeInRight"  data-wow-delay="0.5s" data-wow-duration="1s">
                     <img class="img-fluid" src="img/what-image.png" />
 
                 </div>
@@ -173,13 +172,167 @@
         <div class="container">
             <div class="row">
                 <!-- Add single column -->
-                <div class="col-md-12">
+                <div class="col-md-12 wow fadeInUp">
                     <h2>Our latest work...</h2>
                     <hr align="left" width="30%">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a</p>
 
                 </div>
+                <!-- Close row -->
             </div>
+            <!-- Close row -->
+
+            <div class="row">
+                <!-- Show 4 examples on medium and above devices -->
+                <!-- Show 2 examples on small devices  -->
+                <!-- Stacked on extra small devices -->
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="card">
+                        <div class="work-img">
+                            <a href="#"><img class="card-img-top img-fluid" src="img/buildings.jpg" alt="Card image"></a>
+                            <div class="img-overlay">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card 1 -->
+
+                <!-- Card 2 -->
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="card">
+                        <div class="work-img">
+                            <a href="#"><img class="card-img-top img-fluid" src="img/fair.jpg" alt="Card image"></a>
+                            <div class="img-overlay">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card 2 -->
+
+                <!-- Card 3 -->
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="card">
+                        <div class="work-img">
+                            <a href="#"><img class="card-img-top img-fluid" src="img/city.jpg" alt="Card image"></a>
+                            <div class="img-overlay">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card 3 -->
+
+                <!-- Card 4 -->
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="card">
+                        <div class="work-img">
+                            <a href="#"><img class="card-img-top img-fluid" src="img/rose.jpg" alt="Card image"></a>
+                            <div class="img-overlay">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card 4 -->
+            </div>
+            <!-- Close row -->
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="card">
+                        <div class="work-img">
+                            <a href="#"><img class="card-img-top img-fluid" src="img/skate.jpg" alt="Card image"></a>
+                            <div class="img-overlay">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card 1 -->
+
+                <!-- Card 2 -->
+                <div class="col-md-3 col-sm-6  wow fadeIn" data-wow-delay="0.6s">
+                    <div class="card">
+                        <div class="work-img">
+                            <a href="#"><img class="card-img-top img-fluid" src="img/track.jpg" alt="Card image"></a>
+                            <div class="img-overlay">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card 2 -->
+
+                <!-- Card 3 -->
+                <div class="col-md-3 col-sm-6  wow fadeIn" data-wow-delay="0.7s">
+                    <div class="card">
+                        <div class="work-img">
+                            <a href="#"><img class="card-img-top img-fluid" src="img/goldengate.jpg" alt="Card image"></a>
+                            <div class="img-overlay">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card 3 -->
+
+                <!-- Card 4 -->
+                <div class="col-md-3 col-sm-6  wow fadeIn" data-wow-delay="0.8s">
+                    <div class="card">
+                        <div class="work-img">
+                            <a href="#"><img class="card-img-top img-fluid" src="img/girl-field.jpg" alt="Card image"></a>
+                            <div class="img-overlay">
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card 4 -->
+            </div>
+            <!-- Close row -->
+
         </div>
     </section>
     <!-- Close Work Section -->
@@ -188,11 +341,300 @@
 
 
 
+    <!-- WHY -->
+    <section id="why">
+        <!-- Center everything in container -->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col wow fadeIn">
+                    <h2>Why you should work with us.</h2>
+                    <hr width="30%">
+                    <p>Because we are best at what we do.</p>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.2s">
+                    <i class="far fa-thumbs-up fa-3x fa"></i>
+                    <h3>Customer Satisfaction</h3>
+                    <p>asdflkjsldk fd slkjfldks f</p>
+                </div>
+
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fas fa-chart-line fa-3x fa"></i>
+                    <h3>Instant Results</h3>
+                    <p>asdflkjsldk fd slkjfldks f</p>
+                </div>
+
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.4s">
+                    <i class="fas fa-trophy fa-3x fa"></i>
+                    <h3>Award Winning Service</h3>
+                    <p>asdflkjsldk fd slkjfldks f</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- Close WHY Section -->
+
+
+
+
+
+    <!-- CUSTOMERS -->
+    <section id="customers">
+        <div class="container text-center wow fadeInUp" data-wow-delay="0.2s">
+            <div class="row">
+                <div class="col">
+                    <h2>Customers</h2>
+                    <hr width="30%">
+                    <p>Read what some of our customers have to say about our service.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div id="quotes" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators show which slide you're on -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#quotes" data-slide-to="0" class="active"></li>
+                            <li data-target="#quotes" data-slide-to="1" class="active"></li>
+                            <li data-target="#quotes" data-slide-to="2" class="active"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">saaaaaaaaaaaaaaaaaaaaaaaaaaaaalsdk</p>
+                                    <footer class="blockquote-footer">Some famous in <cite title="Source title">Source Title</cite></footer>
+                                    <p><i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i></p>
+                                </blockquote>
+                            </div>
+                            <div class="carousel-item">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">bbbbbbbbbbbbbbbbbbbbbbbbbbbslkdjflsdk</p>
+                                    <footer class="blockquote-footer">Some famous in <cite title="Source title">Source Title</cite></footer>
+                                    <p><i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i></p>
+                                </blockquote>
+                            </div>
+                            <div class="carousel-item">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">scccccccccccccccccccdk</p>
+                                    <footer class="blockquote-footer">Some famous in <cite title="Source title">Source Title</cite></footer>
+                                    <p><i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i></p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close Customers Section -->
+
+
+
+
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h2>Pricing</h2>
+                    <hr width="30%">
+                    <p class="lead">Pricing structure that can't be beaten.</p>
+                </div>
+                <!-- Close col -->
+            </div>
+            <!-- Close row -->
+
+
+            <div class="row">
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="card">
+                        <div class="card-header">Basic</div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>2</strong> Profiles</li>
+                            <li class="list-group-item"><strong>$</strong> / Month</li>
+                            <li class="list-group-item"><strong>1</strong> GB Storage</li>
+                            <li class="list-group-item"><strong>10GB</strong> Bandwidth</li>
+                            <li class="list-group-item"><strong>1</strong> FTP Account</li>
+                            <li class="list-group-item"><strong>Website</strong> Integration</li>
+                            <li class="list-group-item"><strong>Basic</strong> Customization</li>
+                            <li class="list-group-item"><strong>Email</strong> support</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-outline-info btn-block">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Close col -->
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.8s">
+                    <div class="card">
+                        <div class="card-header standard">STANDARD</div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>2</strong> Profiles</li>
+                            <li class="list-group-item"><strong>$</strong> / Month</li>
+                            <li class="list-group-item"><strong>1</strong> GB Storage</li>
+                            <li class="list-group-item"><strong>10GB</strong> Bandwidth</li>
+                            <li class="list-group-item"><strong>1</strong> FTP Account</li>
+                            <li class="list-group-item"><strong>Website</strong> Integration</li>
+                            <li class="list-group-item"><strong>Basic</strong> Customization</li>
+                            <li class="list-group-item"><strong>Email</strong> support</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-outline-info btn-block">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="card">
+                        <div class="card-header">Basic</div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>2</strong> Profiles</li>
+                            <li class="list-group-item"><strong>$</strong> / Month</li>
+                            <li class="list-group-item"><strong>1</strong> GB Storage</li>
+                            <li class="list-group-item"><strong>10GB</strong> Bandwidth</li>
+                            <li class="list-group-item"><strong>1</strong> FTP Account</li>
+                            <li class="list-group-item"><strong>Website</strong> Integration</li>
+                            <li class="list-group-item"><strong>Basic</strong> Customization</li>
+                            <li class="list-group-item"><strong>Email</strong> support</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-outline-info btn-block">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Close row -->
+
+        </div>
+        <!-- Close container -->
+    </section>
+    <!-- Close Pricing -->
+
+
+
+
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container text-center wow zoomIn" data-wow-delay="0.3s">
+            <div class="row">
+                <div class="col">
+                    <h2>Contact us</h2>
+                    <hr width="30%">
+                    <p>Need to get in touch? Fill out form below.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- mx-auto centers fixed-width block level content-->
+                <!-- It centers the column with 8 rows below -->
+                <div class="col-8 mx-auto">
+                    <form>
+
+                        <fieldset class="form-group"><input type="email" class="form-control form-control-sm" id="email" placeholder="email"></fieldset>
+                        <fieldset class="form-group"><input type="text" class="form-control form-control-sm" id="name" placeholder="name"></fieldset>
+                        <fieldset class="form-group"><input type="text" class="form-control form-control-sm" id="subject" placeholder="subject"></fieldset>
+
+                        <fieldset class="form-group">
+                            <textarea class="form-control form-control-sm" id="message" placeholder="message" rows="3"></textarea>
+                        </fieldset>
+
+                        <button type="submit" class="btn btn-outline-info btn-block">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close Contact section -->
+
+
+
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1.5s">
+            <div class="row">
+                <div class="col-md-8 col-sm-6">
+                    <h3>About XL Technology</h3>
+                    <p>alkdfjs dlkfjs ldf sjdkf sjdlfjsl dfkjs</p>
+                    <p>asdfl asdfjslfs ldfjslfjkslsdjfsd sd f s</p>
+                    <ul class="list-inline">
+                        <!-- Add font awesome icons -->
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fab fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="fa"><i class="fas fa-rss"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <h3>Say hello</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p><strong><i class="fas fa-map-marker"></i> Address:</strong> Location, Street, Code</p>
+                        </li>
+                        <li>
+                            <p><strong><i class="fas fa-envelope-open"></i> Email:</strong> info@example.com</p>
+                        </li>
+                        <li>
+                            <p><strong><i class="fas fa-phone"></i> Phone:</strong> 555-555-5555</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <p>&copy; 2018 Designed by ME</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Close Footer  -->
 
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- Add wow.js https://github.com/matthieua/WOW -->
+    <!-- move /dist/wow.min.js file to /js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
